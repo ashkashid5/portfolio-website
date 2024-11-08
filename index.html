@@ -9,6 +9,8 @@
 <body>
     <header>
         <h1>Welcome to My Portfolio</h1>
+        <!-- Embed the Spline 3D model here -->
+        <iframe src="https://build.spline.design/FXT-fjpg-LielQoReM4e/scene.splinecode" frameborder="0" width="100%" height="500px"></iframe>
         <nav>
             <a href="#about">About Me</a>
             <a href="#experience">Experience</a>
@@ -24,16 +26,51 @@
         </section>
         <section id="experience">
             <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Full Stack Developer, Splendor Security Services</h3>
+                <p>Developed a responsive front end with HTML, CSS, and JavaScript, and optimized backend performance with PostgreSQL, resulting in a 20% reduction in load times.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Data Science Intern, ORNET Technologies</h3>
+                <p>Automated reporting with Python and SQL, saving 15 hours weekly, and created Power BI dashboards to enhance executive decision-making.</p>
+            </div>
         </section>
+        
         <section id="projects">
             <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Twitter Sentiment Analysis</h3>
+                <p>Analyzed sentiment from Twitter comments using NLTK and VADER sentiment analysis. Technologies: Python, Tweepy, MySQL.</p>
+            </div>
+            <div class="project-item">
+                <h3>Cancer Detection using CNN</h3>
+                <p>Implemented CNN models to analyze medical imaging data for early cancer detection. Technologies: TensorFlow, OpenCV.</p>
+            </div>
         </section>
+        
         <section id="skills">
             <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, Java, HTML/CSS, JavaScript, React</li>
+                <li>Database Management: MySQL, PostgreSQL, Power BI</li>
+                <li>Tools: Jupyter Notebook, Pandas, NumPy, OpenCV, Git</li>
+                <li>Frameworks: Flask, Django, TensorFlow</li>
+            </ul>
         </section>
+        
         <section id="contact">
             <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/xkgnrelj" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
+        
     </main>
     <script src="app.js"></script>
 </body>

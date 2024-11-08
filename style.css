@@ -1,27 +1,98 @@
-body {
-    font-family: Arial, sans-serif;
+/* Basic reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f4f4f4;
 }
+
+/* Header styling */
 header {
     background-color: #333;
     color: #fff;
     width: 100%;
+    padding: 20px;
     text-align: center;
-    padding: 1em 0;
 }
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Navigation styling */
 nav a {
     color: #fff;
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
+    font-weight: bold;
 }
+
+nav a:hover {
+    color: #ddd;
+}
+
+/* Main section styling */
 main {
-    padding: 20px;
     width: 80%;
+    max-width: 1000px;
+    padding: 20px;
 }
+
+section {
+    margin: 50px 0;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 h2 {
     color: #333;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* About Me paragraph styling */
+#about p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* Contact form styling */
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input, #contact textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contact button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #555;
 }
