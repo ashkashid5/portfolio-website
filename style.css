@@ -96,3 +96,40 @@ h2 {
 #contact button:hover {
     background-color: #555;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Hover */
+nav a:hover {
+    color: #aaa;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Project Item Hover */
+.project-item:hover {
+    background-color: #f4f4f4;
+    transform: scale(1.02);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555;
+}

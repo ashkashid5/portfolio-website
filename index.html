@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashutosh Kashid - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
 </head>
 <body>
     <header>
@@ -20,11 +23,11 @@
         </nav>
     </header>
     <main>
-        <section id="about">
+        <section id="about" data-aos="fade-up">
             <h2>About Me</h2>
             <p>I'm Ashutosh Kashid, a Data Scientist and Full Stack Developer...</p>
         </section>
-        <section id="experience">
+        <section id="experience" data-aos="fade-up">
             <h2>Experience</h2>
             <div class="experience-item">
                 <h3>Full Stack Developer, Splendor Security Services</h3>
@@ -36,7 +39,7 @@
             </div>
         </section>
         
-        <section id="projects">
+        <section id="projects" data-aos="fade-up">
             <h2>Projects</h2>
             <div class="project-item">
                 <h3>Twitter Sentiment Analysis</h3>
@@ -48,7 +51,7 @@
             </div>
         </section>
         
-        <section id="skills">
+        <section id="skills" data-aos="fade-up">
             <h2>Skills</h2>
             <ul>
                 <li>Programming Languages: Python, Java, HTML/CSS, JavaScript, React</li>
@@ -58,7 +61,7 @@
             </ul>
         </section>
         
-        <section id="contact">
+        <section id="contact" data-aos="fade-up">
             <h2>Contact Me</h2>
             <form action="https://formspree.io/f/xkgnrelj" method="POST">
                 <label for="name">Name:</label>
@@ -73,5 +76,7 @@
         
     </main>
     <script src="app.js"></script>
+    <button id="scrollToTopBtn" title="Go to top">↑</button>
+
 </body>
 </html>
